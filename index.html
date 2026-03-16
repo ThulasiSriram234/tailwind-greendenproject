@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREENDEN</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet " href="input.css">
 </head>
 
 <body>
-    
-    <div class="bg-green-100 p-2 flex justify-between items-center shadow-xl sticky top-0 Z-10">
+
+    <div class="bg-green-100 p-2 flex justify-between items-center shadow-xl sticky top-0 z-20">
         <h1 class="text-2xl  ">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6 md:hidden ">
+        <svg id="btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 md:hidden " style="cursor:pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -28,11 +29,38 @@
             <li class="hover:underline  hover:text-black">
                 <a href="contact.html">Contacts</a>
             </li>
-
         </ul>
     </div>
+    <div id="right"    class="bg-green-100 p-4 fixed z-20 top-0 " style="width: 20%;height: 100vh; right: -50%;">
+        <div class="p-2 ">
+            <p id="outbtn" class="cursor-pointer text-right w-2">x</p>
+        </div>
 
-    <div class="bg-green-200 flex justify-center   ">
+        <ul class="flex flex-col  gap-3 text-gray-400">
+            <li class="hover:underline  hover:text-black">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="hover:underline  hover:text-black">
+                <a href="product.html">Products</a>
+            </li>
+            <li class="hover:underline  hover:text-black">
+                <a href="contact.html">Contacts</a>
+            </li>
+        </ul>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="bg-green-200 flex justify-center ">
         <div class="mt-1.5">
             <p class="p-3">
                 we offer you a wide range of artificial and natural flowers
@@ -52,8 +80,8 @@
         </div>
         <div class="hidden md:block p-5 items-center">
             <img src="./img/best seller-4.jpg" alt="">
-           
-            
+
+
         </div>
 
     </div>
@@ -190,15 +218,15 @@
         <h2 class="text-3xl font-bold "> join our news letter</h2>
         <p>signup for our email newspaper to get exclusive discounts,updates and more</p>
         <input type="text" placeholder="enter your email" class="p-2 border-2 rounded-1xl w-100 m-2 md:w-200 ">
-        
-        
+
+
     </div>
     <div class="text-center">
-        <button class ="bg-green-950 text-white hover:underline p-2 rounded-1xl">subscribe</button>
+        <button class="bg-green-950 text-white hover:underline p-2 rounded-1xl">subscribe</button>
     </div>
     <div class="bg-green-200 grid gap-2 p-4 mt-2">
         <h2 class="text-2xl font-bold">Greenden</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, facilis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, facilis.</p>
         @2021 Greenday.com
     </div>
 
@@ -208,7 +236,7 @@
 
 
 
-
+<script src="script.js"></script>
 
 
 

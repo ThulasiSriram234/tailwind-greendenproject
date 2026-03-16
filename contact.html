@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 
 <body>
     <div class="bg-green-100 p-2 flex justify-between items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl  ">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg  id="btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 md:hidden ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -30,6 +30,28 @@
 
         </ul>
     </div>
+    <div id="right"    class="bg-green-100 p-4 fixed z-20 top-0 " style="width: 20%;height: 100vh; right: -50%;">
+        <div class="p-2 ">
+            <p id="outbtn" class="cursor-pointer text-right w-2">x</p>
+        </div>
+
+        <ul class="flex flex-col  gap-3 text-gray-400">
+            <li class="hover:underline  hover:text-black">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="hover:underline  hover:text-black">
+                <a href="product.html">Products</a>
+            </li>
+            <li class="hover:underline  hover:text-black">
+                <a href="contact.html">Contacts</a>
+            </li>
+        </ul>
+
+
+
+
+    </div>
+
     <div class="grid lg:grid-cols-2 items-start gap-16 p-6 mx-auto max-w-5xl max-lg:max-w-2xl bg-white">
         <div>
             <h2 class="text-slate-900 text-3xl font-bold">Let's Talk</h2>
@@ -115,7 +137,7 @@
 
 
 
-
+<script src="contact.js"></script>
 
 </body>
 
